@@ -1,5 +1,74 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Basic_Programs;
+EV eV=new EV();
+eV.vehicleNumber = 44;
+eV.Brand = "XX";
+eV.Model = "AA";
+Console.WriteLine(eV.SetTypeForVeh());
+eV.Disp();
+
+PV pV=new PV();
+pV.vehicleNumber = 33;
+pV.Brand = "YY";
+pV.Model = "AA";
+Console.WriteLine(pV.SetTypeForVeh());
+pV.Disp();
+
+/*
+Console.WriteLine("1.TS 2.NTS");
+switch (Convert.ToInt32(Console.ReadLine()))
+{
+    case 1:
+        {
+            TeachingStaff teachingStaff = new TeachingStaff();
+            teachingStaff.Staffid = 111;
+            teachingStaff.Staffname = "AAA";
+            teachingStaff.Dept = "CS";
+            teachingStaff.Specialization = "DBMS";
+           
+            teachingStaff.Year = 1999;
+            teachingStaff.DisplayStaffDetalis();
+            teachingStaff.teachingStaffDetails();
+            break;
+        }
+        case 2:
+        {
+            NonTeachingStaff nonTeachingStaff = new NonTeachingStaff();
+            nonTeachingStaff.Staffname = "Arun";
+            nonTeachingStaff.Staffid = 101;
+            nonTeachingStaff.Staffdescription = "aRUN DPT";
+            nonTeachingStaff.Dept = "Admin";
+            nonTeachingStaff.DisplayStaffDetalis();
+            nonTeachingStaff.NonTeachingStaffDetails();
+            break;
+
+        }
+}
+
+
+
+
+
+
+
+/*
+StudentMarks marks = new StudentMarks();
+StudentGrade studentGrade = new StudentGrade();
+studentGrade.RollNo = 0;
+
+studentGrade.Mark1 = 90;
+studentGrade.Mark2 = 98;
+studentGrade.Mark3 = 87;
+studentGrade.StudentName = "AAA";
+studentGrade.DisplayStudentDetails();
+studentGrade.DisplayStudentDetails();
+
+Console.WriteLine("Total Marks :"+studentGrade.CalculateTotal());
+Console.WriteLine("Aerage Marks :"+studentGrade.CalculateAverage());
+;
+Console.WriteLine("Student Grade= "+ studentGrade.CalculateGrade());
+
+
 Electricity electricity1=new(12345,9000,9300,"XX");
 double billamount = electricity1.CalculateBill();
 Console.WriteLine(electricity1.CalculateBill());
@@ -8,7 +77,7 @@ Console.WriteLine(electricity1.consumername);
 Electricity electricity2 = new(12345, 7000, 9300, "XX");
 
 Console.WriteLine(electricity2.CalculateBill());
-/*
+
  * 
 Console.WriteLine("Enter two numbers");
 int num1, num2, ans;
@@ -36,9 +105,10 @@ for(int i = 0; i < s.Length; i++)
 {
     Console.WriteLine(s[i]);
 }
-*/
+
 calulation calculation=new calulation();
 int num1=Convert.ToInt32(Console.ReadLine());
 int num2=Convert.ToInt32(Console.ReadLine());
 double ans=calculation.add(num1, num2);
 Console.WriteLine(ans);
+*/
