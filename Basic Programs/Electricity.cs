@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 namespace Basic_Programs
 {
      class Electricity
-    {
-
+    { 
        public int consumernumber, prevreading, curreading;
         public string? consumername;
 

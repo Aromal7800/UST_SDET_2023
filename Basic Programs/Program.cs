@@ -1,5 +1,19 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using Basic_Programs;
+Doctor doc= new Doctor();
+doc.AddNewDoctor(123,"AA");
+doc.DisplayDoctorDetails();
+doc.ModifyDoctor(123,"BB");
+doc.DisplayDoctorDetails();
+IDoctor Idoc = new Doctor();
+doc.BookApp(980,"XX");
+doc.DelApp("XX");
+calulation docc=new Doctor();
+IApponiment appo = new Doctor();
+
+//Idoc.AddNewDoctor();
+//Idoc.ModifyDoctor();
+/*
 EV eV=new EV();
 eV.vehicleNumber = 44;
 eV.Brand = "XX";
@@ -14,7 +28,7 @@ pV.Model = "AA";
 Console.WriteLine(pV.SetTypeForVeh());
 pV.Disp();
 
-/*
+
 Console.WriteLine("1.TS 2.NTS");
 switch (Convert.ToInt32(Console.ReadLine()))
 {
