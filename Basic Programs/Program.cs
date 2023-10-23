@@ -1,5 +1,41 @@
 ﻿// See https://aka.ms/new-console-template for more information
+
+
 using Basic_Programs;
+//BankDetails bank = new(1234, 1234567890L, "AA", "Inactive");
+//bank.WelcomeMessage();
+BankDetailsNew bank = new(1234, 1234567890L, "AA", "Inactive");
+bank.WelcomeMessage();
+Console.WriteLine("1. Customer id 2. Accno 3. Name ");
+int ch=Convert.ToInt32(Console.ReadLine());
+switch (ch)
+{
+    case 1:
+        {
+            Console.WriteLine("Custid : ");
+            bank.GetAccDetails(Convert.ToInt32(Console.ReadLine()));
+            break;
+        }
+        case 2:
+        {
+            Console.WriteLine("Custid : ");
+            bank.GetAccDetails(Convert.ToInt64(Console.ReadLine()));
+            break;
+        }
+        case 3:
+        {
+            Console.WriteLine("Custid : ");
+            bank.GetAccDetails(Console.ReadLine());
+            break;
+        }
+        default:
+        {
+            Console.WriteLine("Please Enter a number between 1-3");
+            break;
+        }
+}
+/*
+ * 
 Doctor doc= new Doctor();
 doc.AddNewDoctor(123,"AA");
 doc.DisplayDoctorDetails();
