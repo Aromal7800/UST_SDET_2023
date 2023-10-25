@@ -2,8 +2,17 @@
 
 
 using Basic_Programs;
+NGC nGC = new NGC();
+//nGC.SortedListHandling();
+Basic_Programs.GC gC = new();
+gC.DictionaryHandling();
+/*
+nGC.StackHandling();
+Console.WriteLine("Queue");
+nGC.QueueHandling();
 //BankDetails bank = new(1234, 1234567890L, "AA", "Inactive");
 //bank.WelcomeMessage();
+/*
 BankDetailsNew bank = new(1234, 1234567890L, "AA", "Inactive");
 bank.WelcomeMessage();
 Console.WriteLine("1. Customer id 2. Accno 3. Name ");
