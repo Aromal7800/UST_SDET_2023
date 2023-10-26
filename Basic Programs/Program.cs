@@ -2,6 +2,54 @@
 
 
 using Basic_Programs;
+using Basic_Programs.ExceptionMess;
+
+ExceptionHandling exp = new ExceptionHandling(10,120);
+try
+{
+    exp.NumCheck();
+}
+catch(ArgumentException)
+{
+    Console.WriteLine(MyExceptions.exmess[3]);
+}
+try
+{
+    exp.NumCheck2();
+}
+catch (ArgumentException)
+{
+    Console.WriteLine(MyExceptions.exmess[4]);
+}
+/*
+try
+{
+exp.Divide();
+}
+catch (ArithmeticException ex)
+{
+    /*
+    Console.WriteLine(ex.HelpLink);
+    Console.WriteLine(ex.InnerException);
+    Console.WriteLine(ex.StackTrace);
+
+    Console.WriteLine(ex.Source);
+    
+    Console.WriteLine(ex.Message);
+    Console.WriteLine(MyExceptions.exmess[0]);
+}
+catch (IndexOutOfRangeException ex)
+{
+    Console.WriteLine(MyExceptions.exmess[1]);
+}
+catch (Exception ex)
+{
+    Console.WriteLine(MyExceptions.exmess[2]);
+}
+finally { Console.WriteLine("Done"); }
+
+        
+/*
 NGC nGC = new NGC();
 //nGC.SortedListHandling();
 Basic_Programs.GC gC = new();
