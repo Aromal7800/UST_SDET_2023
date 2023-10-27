@@ -20,6 +20,11 @@ namespace Assignment_6_oct_26
             Age = age;
             Diagnosis = diagnosis;
         }
+
+        public Patient()
+        {
+        }
+
         public static List<Patient> PatientsList = new List<Patient>();
         public void AddPatient(int patientId, string? patientName, int age, string? diagnosis)
         {
@@ -30,7 +35,33 @@ namespace Assignment_6_oct_26
             patient.Diagnosis = diagnosis;
             PatientsList.Add(patient);
 
+        }
+        public void ReadPatient()
+        {
+            FileStream fs = new FileStream("C:\\Users\\Administrator\\Desktop\\patient6.txt", FileMode.Open, FileAccess.Read);
+            StreamReader sr = new StreamReader(fs);
+            string Records=sr.ReadToEnd();
+            Console.WriteLine(Records);
+            sr.Close();
+            fs.Close();
 
+        }
+        public void WritePatient()
+        {
+            FileStream fs = new FileStream("C:\\Users\\Administrator\\Desktop\\patient6.txt",
+               FileMode.CreateNew, FileAccess.Write);
+            StreamWriter sw = new StreamWriter(fs);
+           
+            foreach ( Patient patient in PatientsList )
+            {
+                sw.WriteLine("Patient id : {0} Patient Name : {1} patient Diagnosis : {2} Age :{3} ",patient.PatientId,patient.PatientName,patient.Diagnosis,patient.Age);
+            }
+           string? str = PatientsList[0].ToString();
+           //string? str = "Patient id : {0} Patient Name : {1} patient Diagnosis : {2} Total Cost :{3} ", PatientsList[0];
+            sw.Write(str);
+            sw.Flush();
+            sw.Close();
+            fs.Close();
         }
         public void CheckAge(int age)
         {

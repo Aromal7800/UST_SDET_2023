@@ -3,7 +3,13 @@
 
 using Basic_Programs;
 using Basic_Programs.ExceptionMess;
-
+FileOperations fileOperations = new FileOperations();
+fileOperations.FileProperties();
+//fileOperations.CopyMoveFile();
+//fileOperations.ReadData();
+//fileOperations.CreateFile();
+//fileOperations.WriteData();
+/*
 ExceptionHandling exp = new ExceptionHandling(10,120);
 try
 {

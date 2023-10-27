@@ -15,9 +15,7 @@ namespace Basic_Programs.ExceptionMess
            { 2, "Unknown Exception"},
             {3,"Age is 100+" },
             {4,"Age is less" }
-
-        }
-            ;
+        };
         internal class Num1Exception : Exception
         {
             public Num1Exception(string message) : base(message)
