@@ -1,18 +1,16 @@
-﻿
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Case_Study_2
+namespace CaseStudy
 {
-    internal interface IOderable
+    internal interface IOrderable
     {
-        void PlacingOrder();
-        void ProcessingPayment();
-        void DeliveringProduct();
-
+        public  void PlacingOrder();
+        public void ProcessingPayment();
+        public  void DeliveringProduct();
 
     }
 }

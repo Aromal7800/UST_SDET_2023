@@ -1,13 +1,12 @@
-﻿
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Case_Study_2
+namespace CaseStudy
 {
-    internal class Customer
+    internal class Customers
     {
         public int CustomerID { get; set; }
         public string? CustomerName { get; set; }
@@ -17,6 +16,6 @@ namespace Case_Study_2
         public List<PhysicalProduct> ordersphy = new List<PhysicalProduct>();
         public List<DigitalProduct> confirmedorders = new List<DigitalProduct>();
         public List<PhysicalProduct> confirmedordersphy = new List<PhysicalProduct>();
-        public static List<Customer> customers = new List<Customer>();
+        public static List<Customers> customers = new List<Customers>();
     }
 }

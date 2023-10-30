@@ -2,7 +2,16 @@
 
 
 using Basic_Programs;
+    
+/*
 using Basic_Programs.ExceptionMess;
+GenEx<int> g1=new GenEx<int>(10, 20);
+Console.WriteLine(g1.Val1+"  "+ g1.Val2);
+GenEx<double> g2 = new GenEx<double>(10.9000, 20.8990);
+Console.WriteLine(g2.Val1 + "  " + g2.Val2);
+GenEx<string> g3 = new GenEx<string>("hello","hello1");
+Console.WriteLine(g3.Val1 + "  " + g3.Val2);
+/*
 FileOperations fileOperations = new FileOperations();
 fileOperations.FileProperties();
 //fileOperations.CopyMoveFile();

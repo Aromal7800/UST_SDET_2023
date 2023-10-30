@@ -1,13 +1,12 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Case_Study_2
+namespace CaseStudy
 {
-    internal class PhysicalProduct : Product, IOderable
+    internal class PhysicalProduct : Product, IOrderable
     {
         public double Weight { get; set; }
         public string? Dimension { get; set; }
@@ -16,12 +15,12 @@ namespace Case_Study_2
 
         public void DeliveringProduct()
         {
-            Console.WriteLine("product is shipped and shipping cost is {0}", Weight * 10);
+            Console.WriteLine("product is shipped Successfully and shipping cost is {0}", Weight * 10);
         }
 
         public void PlacingOrder()
         {
-            Console.WriteLine("Do you want to continue the order\n1.yes\n2.no");
+            Console.WriteLine("Do you want to continue Press\n1. for yes\n2. for No");
             int option = Convert.ToInt32(Console.ReadLine());
             if (option == 1)
             {
@@ -32,7 +31,7 @@ namespace Case_Study_2
             }
             else
             {
-                Console.WriteLine("reverting");
+                Console.WriteLine("Product Is reverting");
             }
 
         }

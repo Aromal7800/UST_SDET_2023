@@ -1,13 +1,12 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Case_Study_2
+namespace CaseStudy
 {
-    internal class DigitalProduct : Product, IOderable
+    internal class DigitalProduct : Product, IOrderable
     {
         public string? DownloadLink { get; set; }
         public string? FileFormat { get; set; }
@@ -20,7 +19,7 @@ namespace Case_Study_2
 
         public void PlacingOrder()
         {
-            Console.WriteLine("Do you want to continue the order\n1.yes\n2.no");
+            Console.WriteLine("Do you want to continue press \n 1 For Yes \n2 for No");
             int option = Convert.ToInt32(Console.ReadLine());
             if (option == 1)
             {
@@ -31,7 +30,7 @@ namespace Case_Study_2
             }
             else
             {
-                Console.WriteLine("reverting");
+                Console.WriteLine("The Product data is reverting");
             }
         }
 

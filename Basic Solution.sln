@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment-5-oct-25", "Assi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment-6-oct-26", "Assignment-6-oct-26\Assignment-6-oct-26.csproj", "{4E89328B-409F-4936-866D-35FBE1742366}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Case-Study-2", "Case-Study-2\Case-Study-2.csproj", "{C7975190-28B5-4C22-9CDC-D0FD55FD6F73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaseStudy", "Case-Study-2\CaseStudy.csproj", "{C7975190-28B5-4C22-9CDC-D0FD55FD6F73}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment-7-oct-30", "Assignment-7-oct-30\Assignment-7-oct-30.csproj", "{F7847035-905A-4D1A-A759-161D507B993A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{C7975190-28B5-4C22-9CDC-D0FD55FD6F73}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C7975190-28B5-4C22-9CDC-D0FD55FD6F73}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C7975190-28B5-4C22-9CDC-D0FD55FD6F73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7847035-905A-4D1A-A759-161D507B993A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7847035-905A-4D1A-A759-161D507B993A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7847035-905A-4D1A-A759-161D507B993A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7847035-905A-4D1A-A759-161D507B993A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
