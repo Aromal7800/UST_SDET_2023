@@ -5,13 +5,13 @@ using Case_Study_2;
 
 Customer customer11 = new Customer();
 customer11.CustomerID = 1;
-customer11.CustomerName = "Vyshnav";
-customer11.CustomerEmail = "vyshnav@ust";
+customer11.CustomerName = "Aromal";
+customer11.CustomerEmail = "Aromal@ust";
 Customer.customers.Add(customer11);
 Customer customer12 = new Customer();
 customer12.CustomerID = 2;
-customer12.CustomerName = "vishnu";
-customer12.CustomerEmail = "vishnu@ust";
+customer12.CustomerName = "Arun";
+customer12.CustomerEmail = "Arun@ust";
 Customer.customers.Add(customer12);
 Customer customer13 = new Customer();
 customer13.CustomerID = 3;
