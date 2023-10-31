@@ -2,6 +2,36 @@
 
 
 using Basic_Programs;
+public delegate void Deli();
+public delegate void Deli1(int num,int num1);
+public delegate int Deli2(int num, int num1);
+class Program
+{
+    private static readonly Deli methodA;
+
+    //private static Deli methodA;
+
+    public static void Main(string[] args)
+    {
+        DeleEx deleEx = new DeleEx();
+        Deli deli=methodA;
+    //    deli();
+        Deli1 deli1=deleEx.Add;
+        deleEx.Add(Convert.ToInt32(Console.ReadLine()), Convert.ToInt32(Console.ReadLine()));    
+       // deli1(1, 2);
+        Deli1 deli2=deleEx.Sub;
+       // deli2(1,2);
+        Deli1 dobjall = deli2+deli1;
+        dobjall(10, 20);
+       // Deli2 deli3 = deleEx.AddR;
+       // Console.WriteLine(deli3(1, 2));
+       // Deli deli1=methodA;
+        //deli1();
+
+    }
+}
+
+
     
 /*
 using Basic_Programs.ExceptionMess;
