@@ -16,22 +16,12 @@ namespace Assignment_7_oct_30
             availableRooms = rooms;
         }
 
-        public void DisplayAvailableRooms()
-        {
-            Console.WriteLine("Available Rooms:");
-            foreach (var room in availableRooms)
-            {
-                if (!room.IsBooked)
-                {
-                    Console.WriteLine($"Room {room.RoomNumber} - {room.RoomType}");
-                }
-            }
-        }
+       
 
         public void BookRoom(int roomNumber)
         {
-            T room = availableRooms.Find(r => r.RoomNumber == roomNumber);
-            if (room != null && !room.IsBooked)
+            T room = availableRooms.Find(x => x.RoomNumber == roomNumber);
+            if (room != null && room.IsBooked==false)
             {
                 room.IsBooked = true;
                 Console.WriteLine($"Room {roomNumber} is booked.");
