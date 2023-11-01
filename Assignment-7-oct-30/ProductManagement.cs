@@ -16,9 +16,15 @@ namespace Assignment_7_oct_30
         public void UpdateProduct(int productId, Product<T> updatedProduct)
         {
             var productToUpdate=products.Find(x=>x.ProductID==productId);
+          //  Console.WriteLine(updatedProduct.ProductID + "  " + updatedProduct.Name + "   " + updatedProduct.Price + "   " + updatedProduct.QuantityInStock);
+
+
             if (productToUpdate!=null)
             {
-                productToUpdate=updatedProduct;
+                productToUpdate.ProductID=updatedProduct.ProductID;
+                productToUpdate.Name=updatedProduct.Name;
+                productToUpdate.Price=updatedProduct.Price;
+                productToUpdate.QuantityInStock=updatedProduct.QuantityInStock;
 
             }
             else
