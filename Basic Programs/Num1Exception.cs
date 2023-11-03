@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Basic_Programs
 {
+
     internal class Num1Exception:Exception
     {
         public Num1Exception(string message) : base( message)

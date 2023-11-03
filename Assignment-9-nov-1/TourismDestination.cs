@@ -8,12 +8,18 @@ namespace Assignment_9_nov_1
 {
     internal class TourismDestination
     {
-        public string Name {  get; set; }
+        public string DesName {  get; set; }
         public string Country {  get; set; }
         public int Rating {  get; set; }
         public static List<TourismDestination> tourismDestinations = new List<TourismDestination>();
 
-        
+        public TourismDestination(string Desname, string country, int rating)
+        {
+            DesName = Desname;
+            Country = country;
+            Rating = rating;
+        }
+
         public void addTDestination(TourismDestination destination)
         {
             tourismDestinations.Add(destination);
@@ -24,7 +30,7 @@ namespace Assignment_9_nov_1
            var sortedList=  tourismDestinations.OrderByDescending( x => x.Rating );
             foreach( TourismDestination dest in sortedList)
             {
-                Console.WriteLine($"{dest.Name} in {dest.Country}  Rating : {dest.Rating}");
+                Console.WriteLine($"{dest.DesName} in {dest.Country}  Rating : {dest.Rating}");
             }
         }
     }
